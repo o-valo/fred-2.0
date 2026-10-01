@@ -17,33 +17,6 @@ client, and interchangeable tools.
 -  the local RAG tools are implemented. Authentication, the TUI, and MCP plugins are
 -  not implemented yet.
 
-## Renamed from Fred 2.0 (2026-10-01)
-
-The project was called **Fred 2.0** until 2026-10-01. For an existing installation:
-
-| Before | Now |
-|---|---|
-| Directory `~/fred-2.0` | `~/fredTux-2-0` |
-| Module `fred`, CLI `fred` / `fred-api` | `fredtux` / `fredtux` / `fredtux-api` |
-| Package `fred-2.0` | `fredtux-2.0` |
-| Runtime data `~/.fred-2.0` | `~/.fredtux-2.0` |
-| Environment variables `FRED_*` | `FREDTUX_*` |
-| Model ID `fred-2-0` (alias `fred-2.0`) | `fredtux-2-0` (alias `fredtux-2.0`) |
-| `fred-install.sh`, `scripts/backup_fred.sh` | `fredtux-install.sh`, `scripts/backup_fredtux.sh` |
-
-**Important for existing installations:**
-
-- An old `config.nd` with `FRED_*` keys is **silently ignored** – the file is read
-  but none of its keys match any more. Rename the keys to `FREDTUX_*`, otherwise
-  FredTux runs entirely on defaults. The same applies to `shell.nd` and to exported
-  variables.
-- API calls need `{"model": "fredtux-2-0"}`. The compatibility name `fredtux-2.0`
-  is still accepted.
-- Sessions live in `~/.fredtux-2.0/sessions/`. An old `~/.fred-2.0` directory is
-  simply no longer used – rename it by hand if you want to keep it.
-- `backup_fredtux.sh` backs up `~/fredTux-2-0` **and** `~/.fredtux-2.0`; old
-  archives `fred-2.0-backup-*.tgz` are now `fredtux-2.0-backup-*.tgz`.
-
 ## Installing on another machine
 
 Prerequisite: Python 3.10 or newer. For a fresh installation from a Git checkout:

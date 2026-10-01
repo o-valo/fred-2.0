@@ -16,34 +16,6 @@ Ollama-Client und austauschbaren Werkzeugen.
  Session-Persistenz, Markdown-Protokollierung, SSE-Streaming und die lokalen RAG-Werkzeuge sind
  implementiert. Authentifizierung, TUI und MCP-Plugins sind noch nicht implementiert.
 
-## Umbenennung von Fred 2.0 (01.10.2026)
-
-Das Projekt hieß bis zum 01.10.2026 **Fred 2.0**. Für eine bestehende Installation
-heißt es jetzt:
-
-| Vorher | Nachher |
-|---|---|
-| Verzeichnis `~/fred-2.0` | `~/fredTux-2-0` |
-| Modul `fred`, CLI `fred` / `fred-api` | `fredtux` / `fredtux` / `fredtux-api` |
-| Paket `fred-2.0` | `fredtux-2.0` |
-| Laufzeitdaten `~/.fred-2.0` | `~/.fredtux-2.0` |
-| Umgebungsvariablen `FRED_*` | `FREDTUX_*` |
-| Modell-ID `fred-2-0` (Alias `fred-2.0`) | `fredtux-2-0` (Alias `fredtux-2.0`) |
-| `fred-install.sh`, `scripts/backup_fred.sh` | `fredtux-install.sh`, `scripts/backup_fredtux.sh` |
-
-**Wichtig für vorhandene Installationen:**
-
-- Eine alte `config.nd` mit `FRED_*`-Schlüsseln wird **stillschweigend ignoriert** –
-  die Datei wird gelesen, aber keiner ihrer Schlüssel passt noch. Die Schlüssel
-  müssen auf `FREDTUX_*` umbenannt werden, sonst läuft FredTux komplett auf den
-  Standardwerten. Dasselbe gilt für `shell.nd` und exportierte Variablen.
-- API-Aufrufe brauchen `{"model": "fredtux-2-0"}`. Der Kompatibilitätsname
-  `fredtux-2.0` wird weiterhin akzeptiert.
-- Sitzungen liegen unter `~/.fredtux-2.0/sessions/`. Ein altes Verzeichnis
-  `~/.fred-2.0` wird einfach nicht mehr verwendet – bei Bedarf von Hand umbenennen.
-- `backup_fredtux.sh` sichert `~/fredTux-2-0` **und** `~/.fredtux-2.0`; alte
-  Archive `fred-2.0-backup-*.tgz` heißen jetzt `fredtux-2.0-backup-*.tgz`.
-
 ## Installation auf einem anderen Rechner
 
 Voraussetzung: Python 3.10 oder neuer. Für eine frische Installation aus einem
