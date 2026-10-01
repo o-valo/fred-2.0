@@ -1,14 +1,20 @@
+<p align="center">
+  <img src="fredTux-2-0.png" alt="FredTux im Rechenzentrum" width="100%">
+</p>
+
+
 # FredTux 2.0
 
-> Sprache: Deutsch | [English version](README.md)
+- Sprache: Deutsch | [English version](README.md)
 
-FredTux 2.0 ist ein modularer, lokaler Agenten-Harness auf Basis der Python-Standardbibliothek.
-Er verbindet eine CLI-Oberfläche mit einem Agenten-Loop, dateibasierten Sitzungen,
-einem Ollama-Client und austauschbaren Werkzeugen.
+FredTux 2.0 ist ein modularer, lokaler Agenten-Harness auf Basis 
+der Python-Standardbibliothek. Er verbindet eine CLI-Oberfläche 
+mit einem Agenten-Loop, dateibasierten Sitzungen, einem 
+Ollama-Client und austauschbaren Werkzeugen.
 
-> **Projektstatus:** MVP / 0.1.1. CLI, lokale OpenAI-kompatible HTTP-API, Ollama-Vorcheck,
-> Session-Persistenz, Markdown-Protokollierung, SSE-Streaming und die lokalen RAG-Werkzeuge sind
-> implementiert. Authentifizierung, TUI und MCP-Plugins sind noch nicht implementiert.
+ **Projektstatus:** MVP / 0.1.1. CLI, lokale OpenAI-kompatible HTTP-API, Ollama-Vorcheck,
+ Session-Persistenz, Markdown-Protokollierung, SSE-Streaming und die lokalen RAG-Werkzeuge sind
+ implementiert. Authentifizierung, TUI und MCP-Plugins sind noch nicht implementiert.
 
 ## Umbenennung von Fred 2.0 (01.10.2026)
 
