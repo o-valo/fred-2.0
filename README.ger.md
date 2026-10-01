@@ -16,7 +16,7 @@ Ollama-Client und austauschbaren Werkzeugen.
  Session-Persistenz, Markdown-Protokollierung, SSE-Streaming und die lokalen RAG-Werkzeuge sind
  implementiert. Authentifizierung, TUI und MCP-Plugins sind noch nicht implementiert.
 
-## Installation auf einem anderen Rechner
+## Installation
 
 Voraussetzung: Python 3.10 oder neuer. Für eine frische Installation aus einem
 Git-Checkout:

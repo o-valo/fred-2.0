@@ -17,7 +17,7 @@ client, and interchangeable tools.
 -  the local RAG tools are implemented. Authentication, the TUI, and MCP plugins are
 -  not implemented yet.
 
-## Installing on another machine
+## Installation
 
 Prerequisite: Python 3.10 or newer. For a fresh installation from a Git checkout:
 
